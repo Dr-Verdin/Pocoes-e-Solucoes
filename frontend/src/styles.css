@@ -1,0 +1,307 @@
+/* =========================
+   FONTES
+========================= */
+
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+}
+
+body, p, input, button {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+
+/* =========================
+   BASE GLOBAL
+========================= */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("/images/background.jpeg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+  color: #d4af37;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+button {
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  padding: 15px;
+  border-radius: 25px;
+  border: none;
+  font-size: 18px;
+
+  background: black;
+  color: white;
+}
+
+.btn-padrao {
+  padding: 15px;
+  border-radius: 25px;
+  border: none;
+  font-size: 18px;
+
+  background: #3C0061;
+  color: white;
+
+  white-space: nowrap;
+}
+
+
+/* =========================
+   FORM (ADMIN)
+========================= */
+
+.admin-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* melhora responsividade */
+  align-items: center;
+  gap: 15px;
+
+  margin: 20px;
+}
+
+.admin-input {
+  padding: 15px;
+  border-radius: 25px;
+
+  border: 1px solid rgba(255,255,255,0.9);
+  background: transparent;
+  color: white;
+
+  width: 300px;
+  box-sizing: border-box;
+}
+
+.admin-input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+  opacity: 1;
+}
+
+
+/* =========================
+   ADMIN LISTA
+========================= */
+
+.admin-list {
+  margin: 0;
+  padding: 0;
+}
+
+.admin-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 18px;
+
+  padding: 15px;
+  margin-bottom: 10px;
+
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 15px;
+
+  backdrop-filter: blur(4px);
+}
+
+
+/* =========================
+   ADMIN TIPOGRAFIA
+========================= */
+
+.admin-title {
+  font-size: 72px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+/* =========================
+   CONTAINER ADMIN
+========================= */
+
+.admin-container {
+  padding: 40px 60px;
+  color: white;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  padding: 40px 40px 40px 80px;
+  min-height: 65vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  color: white;
+
+  background-image: url("/images/background_hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-title {
+  font-size: 72px;
+  margin: 0;
+}
+
+.hero-text {
+  max-width: 600px;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   SEÇÕES GERAIS
+========================= */
+
+.section-title {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.section-text {
+  max-width: 700px;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   HISTÓRIA
+========================= */
+
+.history {
+  padding: 40px;
+}
+
+.history-images {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.history-images img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+/* =========================
+   PRODUTOS
+========================= */
+
+.products {
+  padding: 40px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  align-items: stretch;
+}
+
+.product-card {
+  width: 250px;
+  min-height: 380px;
+
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.15);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+
+  background: transparent;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-button-area {
+  margin-top: auto;
+  width: 100%;
+}
+
+.product-image {
+  height: 180px;
+  width: auto;
+  border-radius: 6px;
+}
+
+.product-name {
+  margin: 0;
+  font-size: 22px;
+}
+
+.product-desc {
+  font-size: 18px;
+  margin: 0;
+}
+
+.product-price {
+  font-size: 28px;
+}
